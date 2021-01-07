@@ -8,7 +8,7 @@ function Navigation(props) {
             <ul>
                 <li><Link to="/counter">React Counter</Link></li>
                 <li><Link to="/controlledinput">React Controlled Input</Link></li>
-
+                <li><Link to="/controlledforms">React Controlled Forms</Link></li>
             </ul>
         </div>
     )
