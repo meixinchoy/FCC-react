@@ -7,6 +7,8 @@ function Navigation(props) {
             <h1>React Exercises</h1>
             <ul>
                 <li><Link to="/counter">React Counter</Link></li>
+                <li><Link to="/controlledinput">React Controlled Input</Link></li>
+
             </ul>
         </div>
     )
