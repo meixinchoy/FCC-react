@@ -24,8 +24,38 @@ class ControlledInput extends React.Component {
                 { /* Change code above this line */}
                 <h4>Controlled Input:</h4>
                 <p>{this.state.input}</p>
-                <br /><br />
+                <br />
+                <GetInput
+                    input={this.state.inputValue}
+                    handleChange={this.handleChange} />
+                <RenderInput
+                    input={this.state.inputValue} />
+                <br />
                 <Link to="/"><button>Nav</button></Link>
+            </div>
+        );
+    }
+};
+
+class GetInput extends React.Component {
+    render() {
+        return (
+            <div>
+                <h3>Get Input:</h3>
+                <input
+                    value={this.props.input}
+                    onChange={this.props.handleChange} />
+            </div>
+        );
+    }
+};
+
+class RenderInput extends React.Component {
+    render() {
+        return (
+            <div>
+                <h3>Input Render:</h3>
+                <p>{this.props.input}</p>
             </div>
         );
     }
