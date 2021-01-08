@@ -8,26 +8,31 @@ class ControlledInput extends React.Component {
             input: ''
         };
         // Change code below this line
-        this.handleChange = this.handleChange.bind(this);
+        this.handleChange1 = this.handleChange1.bind(this);
+        this.handleChange2 = this.handleChange2.bind(this);
         // Change code above this line
     }
     // Change code below this line
-    handleChange(event) {
-        this.setState({ input: event.target.value })
+    handleChange1(event) {
+        this.setState({ input: event.target.value})
+    }
+    handleChange2(event) {
+        this.setState({ inputValue: event.target.value })
     }
     // Change code above this line
     render() {
         return (
             <div>
-                { /* Change code below this line */}
-                <input value={this.state.input} onChange={this.handleChange.bind(this)} />
-                { /* Change code above this line */}
+
+                <br />
+                <input value={this.state.input} onChange={this.handleChange1.bind(this)} />
                 <h4>Controlled Input:</h4>
                 <p>{this.state.input}</p>
+                
                 <br />
                 <GetInput
                     input={this.state.inputValue}
-                    handleChange={this.handleChange} />
+                    handleChange={this.handleChange2} />
                 <RenderInput
                     input={this.state.inputValue} />
                 <br />
