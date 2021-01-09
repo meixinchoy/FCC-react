@@ -10,6 +10,8 @@ function Navigation(props) {
                 <li><Link to="/controlledinput">React Controlled Input</Link></li>
                 <li><Link to="/controlledforms">React Controlled Forms</Link></li>
                 <li><Link to="/eventlistener">React Event Listener</Link></li>
+                <li><Link to="/onlyeven">React Display Even Num</Link></li>
+                <li><Link to="/magic8ball">React Magic Eight Ball</Link></li>
             </ul>
         </div>
     )

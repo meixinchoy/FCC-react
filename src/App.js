@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Counter, ControlledInput, ControlledForms, EventListener } from "./components";
+import { Navigation, Counter, ControlledInput, ControlledForms, EventListener, OnlyEven, MagicEightBall } from "./components";
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
           <Route path="/controlledinput" exact component={() => <ControlledInput />} />
           <Route path="/controlledforms" exact component={() => <ControlledForms />} />
           <Route path="/eventlistener" exact component={() => <EventListener />} />
+          <Route path="/onlyeven" exact component={() => <OnlyEven />} />
+          <Route path="/magic8ball" exact component={() => <MagicEightBall />} />
         </Switch>
       </Router>
     </div>
