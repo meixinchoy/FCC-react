@@ -2,13 +2,10 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
 class Selector extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     shouldComponentUpdate(nextProps, nextState) {
         console.log('Should I update?');
         // Change code below this line
-        if (nextProps.value % 2 == 0) {
+        if (nextProps.value % 2 === 0) {
             return true;
         }
 
