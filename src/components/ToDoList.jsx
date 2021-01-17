@@ -30,7 +30,7 @@ class ToDoList extends React.Component {
         });
     }
     render() {
-        const items = this.state.toDoList.filter(i=> i.trim()!="").map(i => <li>{i}</li>) // Change this line
+        const items = this.state.toDoList.filter(i=> i.trim()!=="").map(i => <li>{i}</li>) // Change this line
         return (
             <div>
                 <textarea

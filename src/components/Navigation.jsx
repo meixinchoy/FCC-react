@@ -14,6 +14,10 @@ function Navigation(props) {
                 <li><Link to="/magic8ball">React Magic Eight Ball</Link></li>
                 <li><Link to="/todolist">React To Do List</Link></li>
             </ul>
+            <h1>React and Redux</h1>
+            <ul>
+                <li><Link to="/displaymessages">DisplayMessages</Link></li>
+            </ul>
         </div>
     )
 }

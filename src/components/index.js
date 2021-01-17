@@ -6,3 +6,4 @@ export { default as EventListener } from "./EventListener";
 export { default as OnlyEven } from "./OnlyEven";
 export { default as MagicEightBall } from "./magic8ball"; 
 export { default as ToDoList } from "./ToDoList"; 
+export { default as DisplayMessages } from "./RRDisplayMessages"; 
